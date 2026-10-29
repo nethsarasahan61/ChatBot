@@ -1,5 +1,5 @@
 .card {
-  width: 260px;
+  width: 560px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -21,10 +21,25 @@
   overflow-y: scroll;
 }
 
-.message-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.message-list-left{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 3px 5px 3px 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #fdfdfd;
+  background-color: #333;
+}
+.message-list-right{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 3px 5px 3px 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #e0e0e0;
 }
 
 .chat-input {

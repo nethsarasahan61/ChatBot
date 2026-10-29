@@ -12,11 +12,16 @@
     <div class="card">
     <div class="chat-header">ChatBot</div>
         <div class="chat-window">
-        <ul class="message-list"></ul>
+            <div style="display: flex; justify-content: flex-end;">
+                <ul class="message-list-right" id="msg-list-right"></ul>
+            </div>
+            <div style="display: flex; justify-content: flex-start;">
+                <ul class="message-list-left" id="msg-list-left"></ul>  
+            </div>              
         </div>
         <div class="chat-input">
-            <input type="text" class="message-input" placeholder="Type your message here">
-            <input type="button" value="Send" onclick="sendButtonOnAction()" class="send-button">
+            <input type="text" class="message-input" placeholder="Type your message here" id="user-input">
+            <input type="button" value="Send" onclick="sendBtn()" class="send-button" id="btn-Send">
         </div>
     </div>
     </center>
