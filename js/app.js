@@ -1,3 +1,4 @@
+const API_KEY="AQ.Ab8RN6KDrN-46sM2jzAvgYaXhhkMzd5AxY_g6cqbsxdzNvBHwg"
 const msgListLeft=document.getElementById("msg-list-left")
 const msgListRight=document.getElementById("msg-list-right")
 msgListLeft.style.listStyleType='none'
@@ -7,7 +8,7 @@ function sendBtn(){
     msgListRight.innerHTML=''
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("X-goog-api-key", "AQ.Ab8RN6KDrN-46sM2jzAvgYaXhhkMzd5AxY_g6cqbsxdzNvBHwg");
+    myHeaders.append("X-goog-api-key", API_KEY);
 
     const input=document.getElementById("user-input")
     const text=input.value.trim()
