@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ChatBot</title>
     
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>Hello, World!</div>
+    <center>
+    <div class="card">
+    <div class="chat-header">ChatBot</div>
+        <div class="chat-window">
+        <ul class="message-list"></ul>
+        </div>
+        <div class="chat-input">
+            <input type="text" class="message-input" placeholder="Type your message here">
+            <input type="button" value="Send" onclick="sendButtonOnAction()" class="send-button">
+        </div>
+    </div>
+    </center>
 
     <script src="js/app.js"></script>
 </body>
